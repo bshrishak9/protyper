@@ -3,7 +3,14 @@ import React from 'react'
 export default function Profiles({ Leaderboard }) {
   return (
         <div id="profile">
-       
+            <div className='flex'>
+              <div className='item'>
+                 <h1>Participaints</h1>
+              </div>
+              <div className='item'>
+               <h1>  Scores(wpm) </h1> 
+              </div>
+                </div>
             {Item(Leaderboard)}
         </div>
   )

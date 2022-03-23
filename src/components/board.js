@@ -4,12 +4,9 @@ import { Leaderboard } from './database';
 
 export default function Board() {
 
-    const [period, setPeriod] = useState(0);
+    const [period] = useState(0);
 
-  const handleClick = (e) => {
-     
-    setPeriod(e.target.dataset.id)
-  }
+  
 
   return (
     <div className="board">
@@ -25,14 +22,10 @@ export default function Board() {
 
 
 function between(data, between){
-    const today = new Date();
-    const previous = new Date(today);
-    previous.setDate(previous.getDate() - (between + 1));
-
+    
     let filter = data.filter(val => {
-        let userDate = new Date(val.dt);
+        let userScore = new Date(val.dt);
         if (between == 0) return val;
-        return previous <= userDate && today >= userDate;
     })
 
     // sort with asending order

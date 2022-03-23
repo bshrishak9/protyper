@@ -3,43 +3,37 @@ export const Leaderboard = [
     {
         name: "Shawn Hanna",
         class:"Tweleve",
-        score : 1550,
+        score : 50,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2022-02-10"
     },
     {
         name: "Fidel Hand",
         class:"Tweleve",
-        score : 2310,
+        score : 23,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2021-01-01"
     },
     {
         name: "Bessie Hickle",
         class:"Tweleve",
-        score : 350,
+        score : 50,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2021-08-17"
     },
     {
         name: "Adella Wunsch",
         class:"Eleven",
-        score : 2100,
+        score : 21,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2021-10-23"
     },
     {
         name: "Clair O'Connell",
         class:"Tweleve",
-        score : 1250,
+        score : 125,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2022-01-22"
     },
     {
         name: "Kameron Prosacco",
         class:"Tweleve",
-        score : 5250,
+        score : 525,
         img: "https://cdn-icons-png.flaticon.com/512/64/64572.png",
-        dt: "2022-01-21"
     }
 ]

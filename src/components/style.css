@@ -13,20 +13,16 @@
 #main{
         display: flex;
         justify-content: center;
+        width: 100%;
         height: 100vh;
 }
 
 .board {
+    height: auto;
     text-align: center;
+    justify-content: center;
 }
-.title h1{
-    width: 50%;
-    gap: 10rem;
-    padding-top: 0;
-    padding-bottom: 0;
-       font-size: 20px;
-    display: inline-flex;
-}
+
 .board .leaderboard{
     margin-bottom: 1em;
     margin-top: 2em;
@@ -58,7 +54,7 @@
 }
 
 #profile{
-    margin-top: 3em;
+    margin: 3em;
 }
 
 #profile .flex{
