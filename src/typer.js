@@ -1,8 +1,8 @@
 import {useState, useEffect, useRef} from 'react';
 import randomWords from 'random-words';
 import './app.css';
-const NUMB_OF_WORDS = 100
-const SECONDS = 60
+const NUMB_OF_WORDS = 120
+const SECONDS = 120
 
 function Typer() {
   const [words, setWords] = useState([])
@@ -104,13 +104,12 @@ function Typer() {
   return (
    
     <div className="cont">
-      <div className="section">
+    
       <div className="brand">
        <h1> typing-test </h1>
-       <div>
-    <button>Timer: {countDown} s</button>  
-    </div>
-        </div>
+    <h1>Timer: {countDown} s</h1>
+  
+
       </div>
       <div className="control is-expanded section">
         <input ref={textInput} disabled={status !== "started"} type="text" className="input" onKeyDown={handleKeyDown} value={currInput} onChange={(e) => setCurrInput(e.target.value)}  />
@@ -135,14 +134,14 @@ function Typer() {
           </div>
         </div>
       )}
-    
+     
       {status === 'finished' && (
         <div className="section">
           <div className="columns">
             <div className="column has-text-centered">
               <p className="is-size-5">Words per minute(WPM):</p>
               <p className="has-text-primary is-size-1">
-                {Math.round((100/5)-incorrect)}
+                {Math.round((150/5)-incorrect)}
               </p>
             </div>
             <div className="column has-text-centered">
