@@ -21,11 +21,10 @@ export default function Board() {
 
 
 
-function between(data, between){
+function between(data){
     
     let filter = data.filter(val => {
-        let userScore = new Date(val.dt);
-        if (between == 0) return val;
+        return val;
     })
 
     // sort with asending order
